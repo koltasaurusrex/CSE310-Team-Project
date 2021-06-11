@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 def index(response):
-    return render(response, 'index.html')
+    return render(response, 'flashcards.html')
 
 # def registerPage(request):
 #     form = UserCreationForm()
