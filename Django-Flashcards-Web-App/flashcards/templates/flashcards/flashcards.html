@@ -23,7 +23,9 @@
             <div class="card-header">{{ t.description }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ t.topic }}</h5>
+                <h5 class="card-title">{{ t.topic}}</h5>
+                <h4 class="card-text">Created By: {{t.created_by}}</h4>
+                
 
                 <!--conditional statement for plural/singular use of the word card displayed on template-->
                 {% if t.get_card_count != 1 %}

@@ -9,6 +9,7 @@ class Card_Set(models.Model):
     '''                                                        
     topic = models.CharField(max_length = 50, null = False, blank = False)       # Topic of the Deck
     description = models.CharField(max_length = 300, null = False, blank = True) # Description of topic
+    created_by = models.CharField(max_length= 300, null = False, blank = True)
     is_active = models.BooleanField(default = True)   # When Card_Set is created, it will default to 
                                                       # being inactive as no cards will exist in the set
     # __str__ is a function that modifies string representation
