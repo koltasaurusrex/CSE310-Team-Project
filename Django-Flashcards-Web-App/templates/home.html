@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Django Flashcards | Home</title>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+{% endblock %}
+
+{% block body%}
+<div class="container">
+
+    <!--The <i> tag is a smily face :)-->
+    <h3>Welcome to Django Flashcards <i class='far fa-grin' style='font-size:24px'>
+    </i></h3>
+
+      
+        <a class="btn btn-link" href="{% url 'flashcards:flashcards' %}" role="button">
+        <h5><b>Flashcards</b></h5></a>
+
+</div>
+{% endblock %}
