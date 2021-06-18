@@ -8,17 +8,13 @@
 <div class="row">
 {% for t in topics %}
 {% cycle 'primary' 'warning' 'danger' 'secondary' 'success' 'info' 'dark' as color silent %}
-    {% if forloop.counter0|divisibleby:3 %}
-        </div><br><div class="row ml-5">
+    {% if forloop.counter0|divisibleby:4 %}
+        </div><br><div class="row mx-5">
     {% endif %}
 
-        <div class="column">
+        <div class="column" >
 
-            {% if forloop.counter0 == 0 %}
-            <div class="card text-white bg-{{ color }} mr-5" style="width: 17rem;">
-            {% else %}
-            <div class="card text-white bg-{{ color }} mr-3" style="width: 17rem;">
-            {% endif %}
+            <div class="card text-white bg-{{ color }} m-2 " style="width: 17.3rem;">
 
             <div class="card-header">{{ t.description }}
             </div>
@@ -45,7 +41,7 @@
 {% endfor %}
 
 <!-- Create a card button always at the end of card_set gallery -->
-<div class="column ml-5">
+<div class="column m-2">
     <h3>Custom Card Set</h3>
     <h6>Create a custom study set</h6>
     <p>
