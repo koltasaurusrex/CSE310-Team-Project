@@ -6,11 +6,10 @@
 
 {% block body%}
 <div class="row">
+</div><br><div class="row mx-5">
+
 {% for t in topics %}
 {% cycle 'primary' 'warning' 'danger' 'secondary' 'success' 'info' 'dark' as color silent %}
-    {% if forloop.counter0|divisibleby:4 %}
-        </div><br><div class="row mx-5">
-    {% endif %}
 
         <div class="column" >
 
