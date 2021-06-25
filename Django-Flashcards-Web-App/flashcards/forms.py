@@ -18,5 +18,5 @@ class Card_Form(ModelForm):
     '''
     class Meta:
         model = Card
-        fields = ['parent_card_set', 'word', 'definition', 'sentences']
+        fields = ['parent_card_set', 'word', 'definition', 'sentences', 'study_more']
 

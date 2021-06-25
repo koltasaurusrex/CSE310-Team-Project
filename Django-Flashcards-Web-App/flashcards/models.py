@@ -47,6 +47,7 @@ class Card(models.Model):
     word = models.CharField(max_length = 50, null = False, blank = False)         # Vocabulary word
     definition = models.TextField(max_length = 500, null = False, blank = False)  # Word's definition
     sentences = models.TextField(max_length = 500, null = False, blank = True)    # Word used in sentence
+    study_more = models.BooleanField(default=False)
     
 
     def __str__(self):
@@ -97,3 +98,4 @@ class Card(models.Model):
         else:
             return self.parent_card_set.card_set.filter(id__gt = self.id).first()
 
+        
