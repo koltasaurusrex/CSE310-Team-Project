@@ -1,5 +1,5 @@
 # flashcards app urls conf
-from django.conf.urls import url, include
+from django.conf.urls import url
 from . import views # . means we are in the same directory (views is in same directory as urls)
 
 urlpatterns = [ 
@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'edit/(?P<card_set_id>[\d]+)', views.edit_card_set, name = 'edit_card_set'),
     url(r'edit_card/(?P<card_id>[\d]+)', views.edit_card, name = 'edit_card'), 
     url(r'view/(?P<card_set_id>[\d]+)', views.view_card_set, name = 'view_card_set'), 
-    url(r'dictionary/', views.dictionary, name = 'dictionary'), 
+    url(r'dictionary/', views.dictionary, name = 'dictionary'),
 ]

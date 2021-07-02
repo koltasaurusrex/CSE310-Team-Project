@@ -29,7 +29,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
+                    
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'flashcards:flashcards' %}">Flashcards<span class="sr-only">(current)</span></a>
                     </li>
@@ -38,6 +38,16 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'admin:index' %}"><b>Admin Panel</b><span class="sr-only">(current)</span></a>
                     </li>    
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                    <li class="nav-item active">
+                        Hi {{ user.username }}!
+                        <a href="{% url 'logout' %}">Log Out</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item active">
+                        <a href="{% url 'login' %}">Log In</a>
+                    </li>
                     {% endif %}
                 </ul>
 

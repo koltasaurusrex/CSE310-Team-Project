@@ -16,6 +16,7 @@ Including another URLconf
 # This file serves the purpose to route urls to views
 
 from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 from . import views # . means we are in the same directory (views is in same directory as urls)
 
@@ -27,4 +28,6 @@ urlpatterns = [
     url(r'^$', views.index, name = 'index'), 
     url(r'^admin/', admin.site.urls), 
     url(r'^flashcards/', include(('flashcards.urls', 'flashcards'), namespace = 'flashcards')),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
