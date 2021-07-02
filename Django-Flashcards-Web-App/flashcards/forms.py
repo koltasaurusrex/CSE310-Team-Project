@@ -1,4 +1,4 @@
-from django.forms import ModelForm 
+from django.forms import ModelForm
 from django import forms
 from .models import Card_Set, Card
 
@@ -12,6 +12,7 @@ class Card_Set_Form(ModelForm):
         #fields = ['topic', 'description', 'is_active']
 
 
+
 class Card_Form(ModelForm):
     '''
     Form mapping to the Card model
@@ -19,4 +20,3 @@ class Card_Form(ModelForm):
     class Meta:
         model = Card
         fields = ['parent_card_set', 'word', 'definition', 'sentences']
-
