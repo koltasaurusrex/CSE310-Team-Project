@@ -5,6 +5,16 @@
 {% endblock %}
 
 {% block body%}
+
+    <div class="column ml-5">
+        <h3>Custom Card Set</h3>
+        <h6>Create a custom study set</h6>
+        <p>
+        <a class="btn btn-primary" href="{% url 'flashcards:create_card_set' %}"  
+        role="button">Create New</a>
+        </p>
+    </div>
+
 <div class="row">
 {% for t in topics %}
 {% cycle 'primary' 'warning' 'danger' 'secondary' 'success' 'info' 'dark' as color silent %}
@@ -42,16 +52,6 @@
             </div>
         </div>
         
-    {% if forloop.counter0 == 2 %}
-        <div class="column ml-5">
-            <h3>Custom Card Set</h3>
-            <h6>Create a custom study set</h6>
-            <p>
-            <a class="btn btn-primary" href="{% url 'flashcards:create_card_set' %}"  
-            role="button">Create New</a>
-            </p>
-        </div>
-    {% endif %}
 {% endfor %}
 {% endblock %}
 
