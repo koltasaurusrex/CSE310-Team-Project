@@ -1,8 +1,0 @@
-# ignore logs
-*.log
-
-# ignore generated python caches
-*.pyc
-
-#ignore database
-*.sqlite3
