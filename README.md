@@ -16,34 +16,25 @@ that you can then navigate to in your browser.
 
 [Software Demo Video](https://youtu.be/Nnio1nj1NNc)
 
-# Network Communication
-
-
-The architecture of this project is client/server and was accomplished by using python socketserver and socket.
-It establishes a TCP connection from server to client and sends data as bytes over the socket stream.
-
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-Developed in Atom IDE
-Written in Python 3
-Libraries
- - socketserver
- - socket
- - pyqt5 for gui
+IDE
+  - Atom
+  - VsCode
 
-Ubuntu vm running in Virtualbox for better understanding
+Language
+  - python 3
+  - html/css/bootstrap
+  - Django framework 3.2
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [socketserver documentation](https://docs.python.org/3/library/socketserver.html#module-socketserver)
-* [QT documentation](https://doc.qt.io/qtforpython/)
+* [Django Framework](https://www.djangoproject.com/)
+* [Django Documentation](https://docs.djangoproject.com/en/3.2/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Scrolling message view in GUI
-* Serve message to separate client
-* Better GUI
+* User specific flashcards
+* Better tracking to help students study what cards they have previously missed
+* Compete with friends
