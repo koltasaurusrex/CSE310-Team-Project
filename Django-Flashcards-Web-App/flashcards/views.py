@@ -36,7 +36,7 @@ def create_card_set(request):
 
     else:
         if request.user.is_authenticated:
-            form = Card_Set_Form(initial={'created_by': request.user.get_full_name()})
+            form = Card_Set_Form(initial={'created_by': request.user.get_username()})
         else:
             form = Card_Set_Form()
 
