@@ -14,7 +14,7 @@ After downloading the project, you will need to be in the /Django-Flash-Cards/Dj
 and run `python manage.py runserver` to start the server. A web address will be displayed
 that you can then navigate to in your browser.
 
-[Software Demo Video](https://youtu.be/Nnio1nj1NNc)
+[Software Demo Video](https://youtu.be/GkeXuqyDS50)
 
 
 # Development Environment
